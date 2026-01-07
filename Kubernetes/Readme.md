@@ -86,7 +86,7 @@ spec:
     - name: nginx-container
       image: nginx
 ```
-###🔍 Explanation
+### 🔍 Explanation
 
 apiVersion → Kubernetes API version
 
@@ -99,7 +99,7 @@ spec → Desired configuration
 containers → What runs inside the pod
 
 ### 💻 What to Install (OS-wise)
-##🪟 Windows (Recommended Setup)
+## 🪟 Windows (Recommended Setup)
 
 Docker Desktop
 
@@ -111,7 +111,7 @@ Minikube or kind (choose one)
 
 👉 Run Kubernetes tools inside WSL, not PowerShell.
 
-##🍎 macOS
+## 🍎 macOS
 
 Docker Desktop
 
@@ -119,7 +119,7 @@ kubectl
 
 Minikube or kind
 
-##🐧 Linux
+## 🐧 Linux
 
 Docker / containerd
 
@@ -127,7 +127,7 @@ kubectl
 
 Minikube / kind / kubeadm
 
-###▶️ Deploy the Pod
+### ▶️ Deploy the Pod
 ```
 kubectl apply -f nginx-pod.yaml
 ```
@@ -150,11 +150,11 @@ kubectl delete pod <pod-name>
 ```
 
 
-#⚠️ kubectl does NOT create clusters.
+#  ⚠️ kubectl does NOT create clusters.
 It only controls existing clusters.
 
-###🧰 Ways to Create a Kubernetes Cluster
-##🟢 1. Minikube (Best for Beginners)
+###  🧰 Ways to Create a Kubernetes Cluster
+##  🟢 1. Minikube (Best for Beginners)
 
 Single-node cluster
 
@@ -164,7 +164,7 @@ Good for learning
 
 minikube start
 
-##🔵 2. kind (Kubernetes in Docker)
+##  🔵 2. kind (Kubernetes in Docker)
 
 Runs Kubernetes inside Docker containers
 
@@ -174,7 +174,7 @@ Great for CI/CD and local practice
 
 kind create cluster
 
-##🔴 3. kubeadm (Production Style)
+##  🔴 3. kubeadm (Production Style)
 
 Used on Linux servers
 
@@ -182,7 +182,7 @@ Real multi-node clusters
 
 Not recommended for beginners on Windows/macOS
 
-##☁️ 4. Cloud Kubernetes
+##  ☁️ 4. Cloud Kubernetes
 
 AWS EKS
 
